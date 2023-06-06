@@ -1,0 +1,20 @@
+{
+    "feedback_type": "custom",
+    "user_response": {
+        "Q 1": "YES",
+        "Q 2": "It is of same type",
+        "Q 3": "YES",
+        "Q 4": 10.0
+    },
+    "data": null,
+    "model": null,
+    "collaborators": [],
+    "open": true,
+    "tags": null,
+    "git_commit": null,
+    "timestamp": 1686043111,
+    "created_by": null,
+    "closed_on": null,
+    "closed_by": null,
+    "metadata": null
+}

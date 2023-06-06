@@ -1,0 +1,26 @@
+Description of how proejct works:
+
+This projects uses 2 .py file to work:
+1. app.py - > This script creates the ML model and saves it.
+2.original_code1.py -> This script uses the model, take user input, predicts flower type and colles user feedback on model's performance.
+
+A. First script- app.py
+
+1. We can import which ML model we want to use and other supporting libraries.
+2. We need a csv with feature and label and sript will split the data and train the model
+3. Script saves the model so that it can be sued in any other script we make.
+
+B. Second script - original_code1.py
+
+1. We need to install streamlit library in environment we want to use the project.
+2. We import all other libraries to use model, collect feedback and etc
+3. We create a methis to load the model with resource caching so that after first time user does not ahve to waut lon gfor model to predict
+   the flower time as the loaded model will be cached so it runs immediately.
+4. A method user_input_feature has been creted which will collect user flower dimesion as his input and this methid can be changed to suit any other
+   proejct requirement as in what else is needed to include as input from user. And these user inputs are diplayed of left sidebar on screen with dimesion and  units.
+5. Model is called and saved user input in dataframe is fed to model to predict the flower type and predicted flower type is diplayed to user in the 
+   middle of screen.
+6. next we call feedback colector and define few question for user to give feedback on how model performed and this feedback  script can be modified 
+  to suit other project's requirement and user is asked to save the feedback.
+7. Saved feedback is collected and sahred with ML engineer team to see the difference in what model performed and what user thinks about it performance
+   so the ML team can see the difference and modify the ML model to improve its performance.
